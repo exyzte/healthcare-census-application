@@ -89,7 +89,7 @@ nav button:hover {
     flex: 1;
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: none;
     background-color: #f9f9f9;
     margin-bottom: 15px;
     transition: border 0.2s ease;
@@ -100,11 +100,17 @@ nav button:hover {
     outline: none;
 }
 
+#radio-buttons {
+    outline: none;
+    accent-color: #202f3f;
+
+}
+
 /* INPUTS AND TABLE */
 .container select {
     border-radius: 5px;
     padding: 6px;
-    border: 1px solid #ccc;
+    border: none;
     background-color: #f8f8f8;
 }
 .container h1 {
@@ -115,7 +121,7 @@ nav button:hover {
     width: 19em;
     height: 1em;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
     margin-bottom: 10px;
 }
