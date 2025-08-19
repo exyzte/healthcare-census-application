@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #eef4ec;
+    padding: 12px 20px;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #4a84c0;
+}
+nav a.active {
+    color: #0b254b;
+}
+nav input[type="text"] {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    outline: none;
+}
+nav button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #4a84c0;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+nav button:hover {
+    background-color: #366898;
+}
+
+/* PAGE CONTAINER */
+.container {
+    display: block;
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* FORM */
+.analysisForm {
+    font-size: 0,6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    width: 40%;
+}
+.analysisForm h2 {
+    align-self: flex-start;
+    margin-bottom: 15px;
+    font-size: 0,8em;
+    color: #333;
+}
+.analysisForm label {
+    width: 120px; 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.analysisForm input,
+.analysisForm select {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    transition: border 0.2s ease;
+}
+.analysisForm input:focus,
+.analysisForm select:focus {
+    border-color: #4a84c0;
+    outline: none;
+}
+
+/* INPUTS AND TABLE */
+.container select {
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+.container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.container input[type=text] {
+    width: 19em;
+    height: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.container table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* BUTTONS */
+#addPatient {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    padding: 10px 15px;
+    margin: 15px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a84c0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+#addPatient:hover {
+    background-color: #366898;
+}
+
+/* REPORT */
+#analysis-report {
+    padding: 16px;
+    align-items: center;
+    border-radius: 15px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    
+}
