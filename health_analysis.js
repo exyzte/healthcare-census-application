@@ -75,6 +75,7 @@ for (const gender in genderConditionsCount) {
 addPatientButton.addEventListener("click", addPatient);
 
 function searchCondition() {
+    debugger;
     const input = document.getElementById('conditionInput').value.toLowerCase();
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = ''; // Clear previous results
@@ -86,7 +87,7 @@ function searchCondition() {
         
         if(condition) {
             const symptoms = condition.symptoms.join(', ');
-            const prevention = condition.preventions.join(', ');
+            const prevention = condition.prevention.join(', ');
             const treatment = condition.treatment;
         
 
@@ -107,4 +108,4 @@ function searchCondition() {
 
 }
 
-btnSearch.addEventListener("click", searchConttion);
+btnSearch.addEventListener("click", searchCondition);
