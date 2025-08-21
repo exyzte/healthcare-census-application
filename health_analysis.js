@@ -74,18 +74,18 @@ for (const gender in genderConditionsCount) {
 
 addPatientButton.addEventListener("click", addPatient);
 
-function searchConttion() {
+function searchCondition() {
     const input = document.getElementById('conditionInput').value.toLowerCase();
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = ''; // Clear previous results
 
-    fetch('health_alanysis.json')
+    fetch('health_analysis.json')
     .then(response => response.json())
     .then(data => {
         const condition = data.conditions.find(item => item.name.toLowerCase() === input);
         
         if(condition) {
-            const sypmptoms = condition.symptoms.join(', ');
+            const symptoms = condition.symptoms.join(', ');
             const prevention = condition.preventions.join(', ');
             const treatment = condition.treatment;
         
@@ -102,7 +102,7 @@ function searchConttion() {
     })
     .catch(error => {
         console.log('Error', error);
-        resultDiv.innerHTML = `An error ocurred while fetching te data.`;
+        resultDiv.innerHTML = `An error ocurred while fetching the data.`;
     });
 
 }
